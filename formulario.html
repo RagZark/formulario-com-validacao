@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/estilo.css">
+    <title>Quest - Formulário com Validação</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="informacoes">
+            <h1 class="titulo-duvida">
+                FICOU COM DÚVIDA? <br>
+                NOS MANDE UMA MENSAGEM!
+            </h1>
+            <p class="descricao-duvida">
+                Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.
+            </p>
+        </div>
+        <div class="formulario">
+
+            <ul class="lista-formulario">
+                <li class="item-formulario">
+                    <input id="nome" class="caixa-de-texto" type="text" placeholder="Nome completo *">
+                    <p class="campo-obrigatorio preencher">campo obrigatório</p>
+                </li>
+                <li class="item-formulario">
+                    <input id="email" class="caixa-de-texto" type="text" placeholder="Email *">
+                    <p class="campo-obrigatorio preencher">campo obrigatório</p>
+                </li>
+                <li class="item-formulario">
+                    <input id="telefone" class="caixa-de-texto" type="text" placeholder="Telefone *">
+                    <p class="campo-obrigatorio preencher">campo obrigatório</p>
+                </li>
+                <li class="item-formulario">
+                    <textarea  id="texto" name="mensagem" class="caixa-de-texto" cols="50" rows="10"
+                        placeholder="Mensagem *"></textarea>
+                        <p class="campo-obrigatorio preencher">campo obrigatório</p>
+                </li>
+            </ul>
+            <p class="informacao-obrigatoria">*campos obrigatórios</p>
+            <button id="botao-enviar" class="botao-enviar">Enviar</button>
+        </div>
+        <script type="text/javascript" src="./src/js/formulario.js"></script>
+    </main>
+</body>
+
+</html>

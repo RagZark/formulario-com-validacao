@@ -1,0 +1,103 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3d3d3;
+}
+.container{
+    width: 800px;
+    height: 402px;
+    background-image: url(../img/Design\ sem\ nome.png);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.container .informacoes{
+    width: 50%;
+}
+
+
+.informacoes .titulo-duvida, .informacoes .descricao-duvida{
+    color: #FFF;
+}
+
+.informacoes .titulo-duvida{
+    font-size: 2rem;
+    font-weight: 900;
+    padding-bottom: 11px;
+}
+
+.informacoes .descricao-duvida{
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.container .formulario{
+    background-color: #FFF;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.formulario .lista-formulario{
+    list-style: none;
+}
+
+.formulario .caixa-de-texto{
+    width: 298px;
+    height: 35px;
+    padding: 8px;
+    margin: 20px 20px 0 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.formulario #texto{
+    height: 100px;
+    resize: none;
+}
+
+.formulario .botao-enviar{
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    width: 298px;
+    height: 41px;
+    border: none;
+    background-color: #3CCC87;
+    color: #ffffff;
+}
+
+.formulario .informacao-obrigatoria{
+    margin-top: 10px;
+    padding-right: 50%;
+    font-size: 1.5rem;
+}
+
+.lista-formulario .item-formulário{
+    position: relative;
+}
+
+.item-formulario .campo-obrigatorio{
+    position: absolute;
+    margin-left: 23px;
+    font-size: 8px;
+    color: #F52E2E;
+}
+
+.item-formulario .preencher{
+    display: none;
+}
+
+.item-formulario .caixa-de-texto.preenchido{
+    border: 1px solid #3CCC87;
+}
+
+.item-formulario .caixa-de-texto.nao-preenchido{
+    border: 1px solid  #F52E2E;
+}
